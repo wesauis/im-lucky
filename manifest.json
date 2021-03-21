@@ -11,9 +11,18 @@
       "js": [
         "quick-search/google.js"
       ]
+    },
+    {
+      "matches": [
+        "https://www.bing.com/search*"
+      ],
+      "js": [
+        "quick-search/bing.js"
+      ]
     }
   ],
   "permissions": [
-    "https://www.google.com/*"
+    "https://www.google.com/*",
+    "https://www.bing.com/search*"
   ]
 }

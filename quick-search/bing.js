@@ -4,7 +4,7 @@ if (query?.[0] == '!') {
   document
     .evaluate(
       './/a[@href]',
-      window.search,
+      window.b_results,
       null,
       XPathResult.ORDERED_NODE_ITERATOR_TYPE,
       null)
