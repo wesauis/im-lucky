@@ -1,22 +1,19 @@
 {
   "name": "im lucky",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "feeling lucky? let's jump to the first result",
   "manifest_version": 2,
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
-      ],
-      "exclude_globs": [
-        "$chrome://*"
+        "https://www.google.com/*"
       ],
       "js": [
-        "im-lucky.js"
+        "quick-search/google.js"
       ]
     }
   ],
   "permissions": [
-    "<all_urls>"
+    "https://www.google.com/*"
   ]
 }
